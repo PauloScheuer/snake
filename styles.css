@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+#wall {
+  background-color: #e5f2d0;
+  box-sizing: border-box;
+  border: 10px solid #1e3a40;
+  position: fixed;
+}
+
+body {
+  background-color: #0d0d0d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #225926;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.title {
+  margin-top: 20px;
+  font-size: 36px;
+}
+
+.player {
+  position: fixed;
+  background-color: #225926;
+}
+
+#apple {
+  position: fixed;
+  background-color: #8AFF8C;
+}
