@@ -5,6 +5,7 @@
   box-sizing: border-box;
   border: 10px solid #1e3a40;
   position: fixed;
+  visibility: hidden;
 }
 
 body {
@@ -30,4 +31,17 @@ body {
 #apple {
   position: fixed;
   background-color: #8AFF8C;
+}
+
+#data{
+  visibility: hidden;
+}
+
+#btnStart{
+  padding: 10px 20px 10px 20px;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #e5f2d0;
+  border: 4px solid #225926;
+  border-radius: 5px;
+  cursor: pointer;
 }

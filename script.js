@@ -21,7 +21,11 @@ let y2 = 0;
 
 let playerBody;
 let newDirection;
-window.addEventListener('load', () => {
+
+const btnStart = document.getElementById("btnStart");
+btnStart.addEventListener('click', () => {
+  btnStart.style.visibility = 'hidden';
+
   let points = 0;
   let appleState = true;
 
@@ -29,8 +33,11 @@ window.addEventListener('load', () => {
   const wall = document.getElementById("wall");
   const apple = document.getElementById("apple");
   const allPoints = document.getElementById("points");
+  const data = document.getElementById("data");
 
   drawWall(wall);
+
+  data.style.visibility = 'visible';
 
   let posToAdd = {x:x1+size*5, y:y1+size*5}
 
@@ -184,6 +191,8 @@ const drawApple = (apple) => {
 }
 
 const drawWall = (wall) => {
+  wall.style.visibility = 'visible';
+
   wall.style.minWidth = wallW+'px';
   wall.style.minHeight = wallH+'px';
   x1 = (window.innerWidth + wallW)/2 - wallW;
